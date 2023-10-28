@@ -11,25 +11,30 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
+    <div class="content-wrapper ">
 
-        <form id="form">
-            <label for="jumlahKotak">Jumlah Kotak (per sisi): </label>
-            <input type="number" id="jumlahKotak" required>
+        <div class="container">
 
-            <label for="paletWarna">Pilih Palet: </label>
-            <select id="paletWarna">
-                <option value="TWOBITDEMICHROME">2BIT DEMICHROME</option>
-                <option value="SLSO8">SLSO8</option>
-                <option value="RESURRECT64">RESURRECT 64</option>
-            </select>
+            <form id="form">
+                <label for="jumlahKotak">CANVAS SIZE: </label>
+                <input type="number" id="jumlahKotak" required>
+    
+                <label for="paletWarna">PALLETE: </label>
+                <select id="paletWarna">
+                    <option value="TWOBITDEMICHROME">2BIT DEMICHROME</option>
+                    <option value="SLSO8">SLSO8</option>
+                    <option value="RESURRECT64">RESURRECT 64</option>
+                </select>
+    
+                <button type="submit">GENERATE</button>
+            </form>
+    
+            <div id="pixelContainer"></div>
+            
+            <button id="downloadBtn" class="download-btn">DOWNLOAD</button>
 
-            <button type="submit">Generate</button>
-        </form>
+        </div>
 
-        <div id="pixelContainer"></div>
-        
-        <button id="downloadBtn" class="download-btn">Download Gambar</button>
     </div>
     
     <div id="colorPopup" class="color-popup">Color: #FFFFFF</div>

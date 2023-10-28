@@ -4,6 +4,17 @@ body, .content-wrapper, .container, #pixelContainer, form, label, input, select,
     border: none !important;
 }
 
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 420px;  /* Menentukan lebar maksimum untuk tampilan mobile */
+    margin: 0 auto;  /* Membuat konten berada di tengah layar */
+    position: relative;  /* Memastikan posisi relatif untuk child dengan posisi absolute */
+    min-height: 90vh;
+  }
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -17,6 +28,34 @@ body {
     color: aliceblue;
     overflow-x: hidden;
 }
+
+button {
+    text-align: center;
+    display: flex;
+    justify-content: center; /* Menengahkan elemen horizontal */
+    align-items: center; /* Menengahkan elemen vertikal */
+}
+
+form {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Menengahkan elemen horizontal */
+    align-items: center; /* Menengahkan elemen vertikal */
+    gap: 10px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1000px;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Menengahkan elemen vertikal */
+    justify-content: center; /* Menengahkan elemen horizontal */
+}
+
 
 .container {
     width: 100%;
@@ -46,8 +85,9 @@ input, select, button {
 
 label {
     width: 180px;
-    text-align: right;
+    text-align: center;
     padding-right: 10px;
+
 }
 
 .download-btn {
