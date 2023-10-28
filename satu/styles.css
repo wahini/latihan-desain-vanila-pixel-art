@@ -1,0 +1,76 @@
+/* styles.css  */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    background-color: #1c1c1c;
+    color: aliceblue;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 100%;
+    max-width: 1000px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+canvas {
+    width: 100%;
+    max-width: 1000px;
+    max-height: 1000px;
+    border: 1px solid #000000;
+    margin-bottom: 20px;
+}
+
+form {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; /* Menambahkan ini untuk menyelaraskan item secara vertikal */
+    gap: 10px;
+}
+
+input, select, buttonform {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; /* Menambahkan ini untuk menyelaraskan item secara vertikal */
+    gap: 10px;
+}
+
+label, input, select, button {
+    margin: 5px;
+}
+
+input, select, button {
+    padding: 10px;
+    font-size: 16px;
+    width: 200px; /* Menetapkan lebar tetap untuk input, select, dan button */
+}
+
+label {
+    width: 180px; /* Menetapkan lebar tetap untuk label */
+    text-align: right; /* Menyelaraskan teks label ke kanan */
+    padding-right: 10px; /* Menambahkan padding di sisi kanan label */
+}
+
+.download-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    width: auto; /* Mengatur lebar menjadi otomatis agar tidak terpengaruh oleh aturan sebelumnya */
+}
+
+.box {
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
