@@ -1,5 +1,9 @@
 /* styles.css  */
 
+body, .content-wrapper, .container, #pixelContainer, form, label, input, select, button, .box, .color-popup {
+    border: none !important;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
