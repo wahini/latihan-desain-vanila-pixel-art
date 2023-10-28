@@ -21,29 +21,12 @@ body {
     box-sizing: border-box;
 }
 
-canvas {
-    width: 100%;
-    max-width: 1000px;
-    max-height: 1000px;
-    border: 1px solid #000000;
-    margin-bottom: 20px;
-}
-
 form {
     margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center; /* Menambahkan ini untuk menyelaraskan item secara vertikal */
-    gap: 10px;
-}
-
-input, select, buttonform {
-    margin-top: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center; /* Menambahkan ini untuk menyelaraskan item secara vertikal */
+    align-items: center;
     gap: 10px;
 }
 
@@ -54,23 +37,50 @@ label, input, select, button {
 input, select, button {
     padding: 10px;
     font-size: 16px;
-    width: 200px; /* Menetapkan lebar tetap untuk input, select, dan button */
+    width: 200px;
 }
 
 label {
-    width: 180px; /* Menetapkan lebar tetap untuk label */
-    text-align: right; /* Menyelaraskan teks label ke kanan */
-    padding-right: 10px; /* Menambahkan padding di sisi kanan label */
+    width: 180px;
+    text-align: right;
+    padding-right: 10px;
 }
 
 .download-btn {
     margin-top: 20px;
     padding: 10px 20px;
     font-size: 16px;
-    width: auto; /* Mengatur lebar menjadi otomatis agar tidak terpengaruh oleh aturan sebelumnya */
+    width: auto;
+}
+
+#pixelContainer {
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .box {
     box-sizing: border-box;
-    border: 1px solid rgba(255, 255, 255, 0.5);
+    position: relative;
+    cursor: pointer;
+}
+
+.color-popup {
+    position: absolute;
+    background-color: #fff;
+    color: #000;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+    display: none;
+    white-space: nowrap;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 5px;
+}
+
+.box:hover .color-popup {
+    display: block;
 }
