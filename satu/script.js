@@ -15,6 +15,7 @@ window.addEventListener('resize', generateCanvas);
 document.getElementById('form').addEventListener('submit', function (e) {
     e.preventDefault();
     jumlahKotak = document.getElementById('jumlahKotak').value;
+    warnaKotak = []; // Kosongkan array warnaKotak
     generateCanvas();
 });
 
@@ -58,8 +59,11 @@ function generateCanvas() {
 document.getElementById('downloadBtn').addEventListener('click', function () {
     const pixelContainer = document.getElementById('pixelContainer');
     const paletTerpilih = document.getElementById('paletWarna').value;
-    const link = document.createElement('a');
-    link.download = `${jumlahKotak}x${jumlahKotak}-${paletTerpilih}.png`;
-    link.href = pixelContainer.toDataURL();
-    link.click();
+    
+    html2canvas(pixelContainer).then(function(canvas) {
+        const link = document.createElement('a');
+        link.download = `${jumlahKotak}x${jumlahKotak}-${paletTerpilih}.png`;
+        link.href = canvas.toDataURL();
+        link.click();
+    });
 });
