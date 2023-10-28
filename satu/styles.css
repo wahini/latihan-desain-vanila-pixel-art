@@ -73,6 +73,10 @@ form {
     gap: 10px;
 }
 
+form label, form input, form select, form button {
+    text-align: center;
+}
+
 label, input, select, button {
     margin: 5px;
 }
