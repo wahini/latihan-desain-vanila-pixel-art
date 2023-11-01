@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: 'MonoMek';
-    src: url('../MonoMEK%20v1.0/Mek-Mono.otf');
+    src: url('./MonoMEK\ v1.0/Mek-Mono.otf');
 }
 
 body, .content-wrapper, .container, #pixelContainer, form, label, input, select, button, .box, .color-popup {
