@@ -1,15 +1,9 @@
 /* styles.css  */
 
-@font-face /*perintah untuk memanggil font eksternal*/
-        {
-            font-family: 'MonoMek'; /*memberikan nama bebas untuk font*/
-            src: url('../MonoMEK\ v1.0/Mek-Mono.otf');/*memanggil file font eksternalnya di folder nexa*/
-        }
- 
-        body, .content-wrapper, .container, #pixelContainer, form, label, input, select, button, .box, .color-popup
-        {
-            font-family: 'MonoMek'; /*nama yang sudah didefinisikan pada @font-face*/
-        }
+@font-face {
+    font-family: 'MonoMek';
+    src: url('../MonoMEK%20v1.0/Mek-Mono.otf');
+}
 
 body, .content-wrapper, .container, #pixelContainer, form, label, input, select, button, .box, .color-popup {
     border: none !important;
